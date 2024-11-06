@@ -2,7 +2,6 @@ package ru.kors.springstudents.repository;
 
 import org.springframework.stereotype.Repository;
 import ru.kors.springstudents.model.Student;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -20,7 +19,7 @@ public class InMemoryStudentDAO {
         return student;
     }
 
-    public Student findStudentByEmail(String email) {
+    public Student findByEmail(String email) {
         return STUDENTS.stream()
                 .filter(element -> element.getEmail().equals(email))
                 .findFirst()
@@ -40,9 +39,10 @@ public class InMemoryStudentDAO {
     }
 
     public void deleteStudent(String email) {
-        var student = findStudentByEmail(email);
+        var student = findByEmail(email);
         if (student != null) {
             STUDENTS.remove(student);
         }
+
     }
 }

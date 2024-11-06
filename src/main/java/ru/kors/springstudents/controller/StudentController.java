@@ -11,8 +11,7 @@ import java.util.List;
 @RequestMapping("/api/v1/students")
 @AllArgsConstructor
 public class StudentController {
-
-    private StudentService service;
+    private final StudentService service;
 
     @GetMapping
     public List<Student> findAllStudent() {
@@ -22,12 +21,12 @@ public class StudentController {
     @PostMapping("save_student")
     public String saveStudent(@RequestBody Student student) {
         service.saveStudent(student);
-        return "Student saved";
+        return "Student successfully saved";
     }
 
     @GetMapping("/{email}")
-    public Student findByEmail(@PathVariable("email") String email) {
-        return service.findStudentByEmail(email);
+    public Student findByEmail(@PathVariable String email) {
+        return service.findByEmail(email);
     }
 
     @PutMapping("update_student")
