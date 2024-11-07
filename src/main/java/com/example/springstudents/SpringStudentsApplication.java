@@ -1,4 +1,4 @@
-package ru.kors.springstudents;
+package com.example.springstudents;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

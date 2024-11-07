@@ -1,6 +1,6 @@
-package ru.kors.springstudents.service;
+package com.example.springstudents.service;
 
-import ru.kors.springstudents.model.Student;
+import com.example.springstudents.model.Student;
 import java.util.List;
 
 public interface StudentService {

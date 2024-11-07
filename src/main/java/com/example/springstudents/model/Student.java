@@ -1,4 +1,4 @@
-package ru.kors.springstudents.model;
+package com.example.springstudents.model;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDate;
