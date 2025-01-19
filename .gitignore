@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+.DS_Store
+.env.local
+/node_modules
+package-lock.json

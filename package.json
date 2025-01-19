@@ -1,0 +1,50 @@
+{
+  "name": "task-board-telegram",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "bot:dev": "ts-node bot/index.ts",
+    "cron": "ts-node scripts/check-raffles.ts"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "@prisma/client": "^6.2.1",
+    "@telegram-apps/sdk-react": "^2.0.25",
+    "@types/bcrypt": "^5.0.2",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node-cron": "^3.0.11",
+    "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "^11.7.2",
+    "dotenv": "^16.4.7",
+    "firebase": "^11.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "next": "15.1.4",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2",
+    "prisma": "^6.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}
